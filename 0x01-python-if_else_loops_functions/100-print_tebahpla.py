@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+chan = False
+dif = ord('A') - ord('a')
 for i in range(ord('z'), ord('a') -1, -1):
-    if i % 2 == 0:
-        str = 0
-    else:
-        str = 32
-    print("{}".format(chr(i - str)), end='')
+    if chan:
+        i += dif
+    chan = not chan
+    a = chr(i)
+    print("{}".format(a), end='')

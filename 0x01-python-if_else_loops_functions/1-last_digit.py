@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
 # num = int(repr(number)[-1])

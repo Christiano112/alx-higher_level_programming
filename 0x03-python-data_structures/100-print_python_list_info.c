@@ -3,6 +3,7 @@
 
 /**
  * print_python_list_info - prints python list info
+ *
  * @p: python object
  * Return: no return
  */
@@ -15,6 +16,9 @@ void print_python_list_info(PyObject *p)
 
 	size = Py_SIZE(p);
 	printf("[*] Size of the Python LIst = %ld\n", size);
+
+	list = (PyListObject *)p;
+	printf("[*] Allocated = %ld\n", list->allocated);
 
 	for (i = 0; i < size; i++)
 	{

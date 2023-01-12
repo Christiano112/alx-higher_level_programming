@@ -4,6 +4,6 @@ def number_keys(a_dictionary):
     new_list = list(a_dictionary.keys())
 
     for i in new_list:
-        x += i
+        x += 1
 
     return (x)

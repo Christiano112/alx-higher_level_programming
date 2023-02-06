@@ -10,8 +10,8 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        """ returns a new Rectangle instance that is a square """
-        return Rectangle(size, size)
+        """ returns a new Rectangle instance that is a square with w==h==s """
+        return cls(size, size)
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):

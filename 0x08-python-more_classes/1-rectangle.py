@@ -15,7 +15,7 @@ class Rectangle:
         return self.__width
 
     @width.setter
-    def width(Self, value):
+    def width(self, value):
         """ setter for the private instance attribute width """
         if type(value) is not int:
             raise TypeError("width must be an integer")

@@ -19,13 +19,13 @@ class Square:
         self.__size = size
 
     @property
-    def size(slef):
+    def size(self):
         """ Retrieves size of square """
 
         return self.__size
 
     @size.setter
-    def size(slef, value):
+    def size(self, value):
         if not isinstance(value, int):
             raise TypeError('size must be an integer')
         if value < 0:

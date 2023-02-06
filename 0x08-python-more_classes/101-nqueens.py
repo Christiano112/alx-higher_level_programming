@@ -36,15 +36,15 @@ if __name__ == "__main__":
             return False
         i = 0
         while (i < x):
-            if abs(A[i][1] - y) == abs(i - x):
+            if abs(a[i][1] - y) == abs(i - x):
                 return False
             i += 1
         return True
 
     def clear_a(x):
         """ clears the answers from the point of failure """
-        for i range(x, n):
-            a[i][1] - None
+        for i in range(x, n):
+            a[i][1] = None
 
     def nqueens(x):
         """ recursive backtracking function to find the solution """
@@ -52,7 +52,7 @@ if __name__ == "__main__":
             clear_a(x)
             if reject(x, y):
                 a[x][1] = y
-                if (X == n - 1):
+                if (x == n - 1):
                     print(a)
                 else:
                     nqueens(x + 1)

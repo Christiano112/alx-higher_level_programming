@@ -3,5 +3,5 @@
 
 
 def is_same_class(obj, a_class):
-    """ returns true if obj is the exact class as a_class, else returns false """
+    """ true if obj is the exact class as a_class, else false """
     return (type(obj) == a_class)

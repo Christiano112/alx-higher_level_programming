@@ -1,3 +1,4 @@
--- update Bob's score to 10
+-- lists all scores and names record in second_table
+-- result should be in descending order of scores
 
-UPDATE second_table SET score=10 WHERE name="Bob";
+SELECT score, name FROM second_table ORDER BY score DESC;

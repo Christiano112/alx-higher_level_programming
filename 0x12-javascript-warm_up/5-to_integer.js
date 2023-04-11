@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-if (Number(process.argv.slice(2)[0])) {
-	console.log('My number: ' + Number(process.argv/slice(2)[0]);
+if (parseInt(process.argv[2])) {
+  console.log('My number: ' + parseInt(process.argv[2]);
 } else {
-	console.log('Not a number');
+  console.log('Not a number');
 }

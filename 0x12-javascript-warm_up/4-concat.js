@@ -1,2 +1,3 @@
 #!/usr/bin/node
-console.log(process.argv.slice(2)[0] + 'is' + process.argv.slice(2)[1]);
+
+console.log(process.argv[2] + 'is' + process.argv.[3]);

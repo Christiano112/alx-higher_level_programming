@@ -1,14 +1,14 @@
 #!/usr/bin/node
 
-const myArg = parseInt(process.argv[2]);
+const myArg = process.argv[2];
 
-if (myArg) {
+if (parseInt(myArg)) {
   for (let i = 0; i < myArg; i++) {
     let myY = 0;
     let myX = '';
 
     while (myY < myX) {
-      myX = myX + 'X';
+      myX += 'X';
       myY++;
     }
     console.log(myX);

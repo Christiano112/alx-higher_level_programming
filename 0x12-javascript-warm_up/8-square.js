@@ -7,7 +7,7 @@ if (parseInt(myArg)) {
     let myY = 0;
     let myX = '';
 
-    while (myY < myX) {
+    while (myY < myArg) {
       myX += 'X';
       myY++;
     }

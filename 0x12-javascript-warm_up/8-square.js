@@ -1,12 +1,14 @@
 #!/usr/bin/node
 
 const myArg = parseInt(process.argv[2]);
-let myX = '';
-if (!isNaN(myArg)) {
+
+if (myArg) {
   for (let i = 0; i < myArg; i++) {
     let myY = 0;
+    let myX = '';
+
     while (myY < myX) {
-      myX += 'X';
+      myX = myX + 'X';
       myY++;
     }
     console.log(myX);
